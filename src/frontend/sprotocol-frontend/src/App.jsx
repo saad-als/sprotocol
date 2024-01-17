@@ -1,10 +1,10 @@
-import LoginForm from "./components/LoginForm"
+import HomePage from "./pages/HomePage"
 function App() {
 
   return (
     <>
 
-      <LoginForm />
+      <HomePage />
 
 
     </>
