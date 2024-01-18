@@ -2,10 +2,10 @@ function NavBar() {
     return (
         <>
 
-            <nav className="navbar">
+            <nav className="navbar h-10">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src="./././assets/sprotocol-logos/sprotocol-logos_black.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
+                        <img src="./././assets/sprotocol-logos/sprotocol-logos_black.png" alt="Logo" width="120" height="120" className="d-inline-block align-text-top" />
 
                     </a>
 
