@@ -4,7 +4,11 @@ function App() {
   return (
     <>
 
-      <HomePage />
+      <div className="d-flex align-items-center justify-content-center p-5">
+
+        <HomePage />
+
+      </div>
 
 
     </>
