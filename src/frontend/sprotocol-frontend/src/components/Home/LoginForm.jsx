@@ -1,4 +1,5 @@
 import SenderForm from "./SenderForm";
+import ReceiverForm from "./RecevierForm";
 function LoginForm() {
 
     return (
@@ -29,6 +30,9 @@ function LoginForm() {
 
                     <div className="collapse p-4" id="collapseExample">
                         <div className="card card-body">
+
+                            <SenderForm />
+                            <ReceiverForm />
 
 
 

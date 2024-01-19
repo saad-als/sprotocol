@@ -14,10 +14,16 @@ function SenderForm() {
                                 </span>
                                 <div className="form-floating">
                                     <input type="text" readOnly className="form-control-plaintext border border-primary" id="floatingPlaintextInput" placeholder="*****" />
-                                    {/* <label htmlFor="floatingInputGroup1">Secure Code</label> */}
                                 </div>
                             </div>
                         </div>
+
+                        <div className="form-floating mb-3">
+                            <button type="button" className="btn btn-success mx-auto">Join Chat</button>
+
+                        </div>
+
+
                     </div>
                 </form>
 
