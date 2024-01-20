@@ -1,4 +1,5 @@
 import HomePage from "./pages/HomePage"
+import ChatPage from "./pages/ChatPage"
 function App() {
 
   return (
@@ -6,7 +7,8 @@ function App() {
 
       <div className="">
 
-        <HomePage />
+        {/* <HomePage /> */}
+        <ChatPage />
 
       </div>
 
