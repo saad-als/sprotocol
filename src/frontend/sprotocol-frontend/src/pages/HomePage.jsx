@@ -20,7 +20,7 @@ function HomePage() {
 
             </div>
 
-            <footer className=' w-100 p-4 text-center text-body-tertiary page-footer fixed-bottom font-small'>@ 2024 Copyright: Saad Alsayed</footer>
+            <footer className=' w-100 p-4 text-center text-body-tertiary font-small'>@ 2024 Copyright: Saad Alsayed</footer>
 
 
 
