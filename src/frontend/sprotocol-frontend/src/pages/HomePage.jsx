@@ -1,5 +1,5 @@
-import NavBar from '../components/NavBar';
-import LoginForm from '../components/LoginForm'
+import NavBar from '../components/Home/NavBar'
+import LoginForm from '../components/Home/LoginForm'
 import '../styles/loginForm.css'
 function HomePage() {
 
@@ -20,7 +20,7 @@ function HomePage() {
 
             </div>
 
-            <footer className=' w-100 p-2 text-center text-body-tertiary'>@ 2024 Copyright: Saad Alsayed</footer>
+            <footer className=' w-100 p-4 text-center text-body-tertiary page-footer fixed-bottom font-small'>@ 2024 Copyright: Saad Alsayed</footer>
 
 
 
