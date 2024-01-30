@@ -15,10 +15,10 @@ function ChatPage() {
 
             </div>
 
-            <footer className='w-100 p-4 text-center '>
+            <div className='p-4 container-md'>
                 < MessageBox />
 
-            </footer>
+            </div>
 
         </>
     );

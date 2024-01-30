@@ -11,8 +11,7 @@ function MessageBubble() {
                         <div className="d-flex flex-row justify-content-start mb-4">
                             <div className=" ms-3">
                                 <p className="small mb-0">
-                                    Hello and thank you for visiting MDBootstrap. Please click the video
-                                    below.
+                                    السلام عليكم ورحمة الله وبركاته
                                     <span className='position-absolute top-0 start-0 translate-middle badge bg-warning '>
                                         sender
                                     </span>
@@ -34,8 +33,7 @@ function MessageBubble() {
                         <div className="d-flex flex-row justify-content-end mb-4">
                             <div className=" ms-3">
                                 <p className="small mb-0">
-                                    Hello and thank you for visiting MDBootstrap. Please click the video
-                                    below.
+                                    وعليكم السلام ورحمة الله وبركاته
                                     <span className='position-absolute top-0 start-100 translate-middle badge bg-success '>
                                         recevier
                                     </span>
