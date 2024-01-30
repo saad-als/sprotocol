@@ -1,9 +1,11 @@
 import SenderForm from "./SenderForm";
 import ReceiverForm from "./RecevierForm";
+import { useState } from "react";
 function LoginForm() {
-
+    const [value, setValue] = useState(null);
     return (
         <>
+
             <div className="container-fluid align-items-center justify-content-center rounded">
 
                 <div className="d-block text-center">
@@ -17,29 +19,25 @@ function LoginForm() {
 
                 <div className="container-sm p-2 d-block text-center">
                     <div className="d-inline-flex gap-3 m-2">
-                        <button className="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button className="btn btn-warning sender-btn" onClick={() => setValue(true)} type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             Sender
                         </button>
 
-                        <button className="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <button className="btn btn-success recevier-btn" onClick={() => setValue(false)} type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                             Receiver
                         </button>
 
                     </div>
 
-
                     <div className="collapse p-4" id="collapseExample">
                         <div className="card card-body">
 
-                            <SenderForm />
-                            <ReceiverForm />
-
-
-
-
+                            {value ? <SenderForm /> : <ReceiverForm />}
 
                         </div>
                     </div>
+
+
                 </div>
 
 
