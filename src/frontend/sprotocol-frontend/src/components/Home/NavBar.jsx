@@ -10,7 +10,7 @@ function NavBar() {
                     </a>
 
                     <div className="d-flex me-4">
-                        <div className="dropstart">
+                        <div className="dropdown">
                             <button className="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span className="navbar-toggler-icon"></span>
                             </button>

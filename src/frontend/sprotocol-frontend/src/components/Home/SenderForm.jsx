@@ -3,7 +3,7 @@ function SenderForm() {
         <>
             <div className="sender-class ">
 
-                <form action="">
+                <form action="" method="POST">
                     <div className="form-floating mb-3">
                         <input type="text" className="form-control" id="floatingInput" placeholder="..." />
                         <label htmlFor="floatingInput">Your Name</label>

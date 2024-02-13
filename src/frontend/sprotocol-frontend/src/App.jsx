@@ -7,8 +7,8 @@ function App() {
 
       <div className="">
 
+        {/* <HomePage /> */}
         <HomePage />
-        {/* <ChatPage /> */}
 
       </div>
 
