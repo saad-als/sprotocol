@@ -10,15 +10,10 @@ function NavBar() {
                     </a>
 
                     <div className="d-flex me-4">
-                        <div className="dropdown">
-                            <button className="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Dark theme</a></li>
-                                <li><a className="dropdown-item" href="#">Github</a></li>
-                            </ul>
-                        </div>
+
+                        <a href="https://github.com/saad-als/sprotocol" className=" rounded">
+                            <img src="./././assets/github-mark.png" width="35" height="35" alt="a github logo" />
+                        </a>
                     </div>
                 </div>
 
