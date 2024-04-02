@@ -8,14 +8,17 @@ function ChatPage() {
         <>
 
             <NavBarChat />
+            <div className="container-sm overflow-auto " style={{ height: 600 + 'px' }}>
 
-            <div className="container-md">
-
+                <MessageBubble />
+                <MessageBubble />
+                <MessageBubble />
+                <MessageBubble />
                 <MessageBubble />
 
             </div>
 
-            <div className='p-4 container-md'>
+            <div className='p-4 container-md fixed-bottom'>
                 < MessageBox />
 
             </div>
