@@ -2,7 +2,7 @@ function NavBar() {
     return (
         <>
 
-            <nav className="navbar h-10">
+            <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src="./././assets/sprotocol-logos/sprotocol-logos_black.png" alt="Logo" width="120" height="120" className="d-inline-block align-text-top" />

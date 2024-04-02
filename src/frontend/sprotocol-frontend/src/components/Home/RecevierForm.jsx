@@ -18,7 +18,7 @@ function ReceiverForm() {
                         </div>
 
                         <div className="form-floating mb-3">
-                            <button type="button" className="btn btn-warning mx-auto">Accept invite and Join Chat</button>
+                            <button type="button" className="btn btn-warning mx-auto"><a href=".../pages/ChatPage">Accept invite and Join Chat</a></button>
 
                         </div>
 

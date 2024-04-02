@@ -6,7 +6,7 @@ function LoginForm() {
     return (
         <>
 
-            <div className="container-fluid align-items-center justify-content-center rounded">
+            <div className="container-fluid align-items-center justify-content-center rounded w-20">
 
                 <div className="d-block text-center">
                     <img src="./././assets/sprotocol-logos/sprotocol-logos_black.png" alt="logo" className=" rounded d-block mx-auto" width="190" height="190" />
@@ -29,7 +29,7 @@ function LoginForm() {
 
                     </div>
 
-                    <div className="collapse p-4" id="collapseExample">
+                    <div className="collapse p-1" id="collapseExample">
                         <div className="card card-body">
 
                             {value ? <SenderForm /> : <ReceiverForm />}
