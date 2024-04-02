@@ -1,4 +1,7 @@
 function SenderForm() {
+
+    const generateCode = () => {
+    };
     return (
         <>
             <div className="sender-class ">
@@ -10,11 +13,11 @@ function SenderForm() {
 
                         <div className="d-inline-flex gap-3 m-2 form-floating">
                             <div className="input-group mb-3">
-                                <span className="input-group-text"><button type="button" className="btn btn-outline-warning">generate code</button>
+                                <span className="input-group-text"><button type="button" className="btn btn-outline-warning" onClick={generateCode}>generate code</button>
                                 </span>
-                                <div className="form-floating">
-                                    <input type="text" readOnly className="form-control-plaintext border border-primary" id="floatingPlaintextInput" placeholder="*****" />
-                                </div>
+
+                                <input className="form-control" type="text" value="" placeholder="copy the code " aria-label="readonly input example" readOnly />
+
                             </div>
                         </div>
 
