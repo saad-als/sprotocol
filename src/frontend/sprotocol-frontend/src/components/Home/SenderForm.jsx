@@ -1,33 +1,60 @@
+import { useState } from "react";
 function SenderForm() {
 
-    const generateCode = () => {
+
+    const [showLogin, setLogin] = useState(false);
+
+
+    const handleLogin = (e) => {
+        if (e) {
+            return (<>
+                <div className="d-inline-flex gap-3 m-2 form-floating">
+                    <div className="input-group mb-3">
+
+
+                        <input className="form-control" type="text" value="" placeholder="copy the code " aria-label="readonly input example" readOnly />
+
+                    </div>
+                </div>
+
+                <div className="form-floating mb-3">
+                    <button type="button" className="btn btn-success mx-auto">Join Chat</button>
+
+                </div>
+
+            </>)
+        }
+        else {
+            return (
+                <>
+                    <div className="d-inline-flex form-floating mb-3">
+                        <input type="text" className="form-control" id="floatingInput" placeholder="..." />
+                        <label htmlFor="floatingInput">Your Name</label>
+                        <span className="input-group-text"><button type="button" onClick={() => { setLogin(true) }} className="btn btn-outline-warning" >generate code</button>
+                        </span>
+
+
+
+                    </div>
+
+
+                </>
+            );
+        }
     };
+
+
+    // send the sender name
+
+    // return the secure code to user
+
+    // when clicked join chat switch to chat page
     return (
         <>
             <div className="sender-class ">
 
                 <form action="" method="POST">
-                    <div className="form-floating mb-3">
-                        <input type="text" className="form-control" id="floatingInput" placeholder="..." />
-                        <label htmlFor="floatingInput">Your Name</label>
-
-                        <div className="d-inline-flex gap-3 m-2 form-floating">
-                            <div className="input-group mb-3">
-                                <span className="input-group-text"><button type="button" className="btn btn-outline-warning" onClick={generateCode}>generate code</button>
-                                </span>
-
-                                <input className="form-control" type="text" value="" placeholder="copy the code " aria-label="readonly input example" readOnly />
-
-                            </div>
-                        </div>
-
-                        <div className="form-floating mb-3">
-                            <button type="button" className="btn btn-success mx-auto">Join Chat</button>
-
-                        </div>
-
-
-                    </div>
+                    {handleLogin(showLogin)}
                 </form>
 
             </div>
