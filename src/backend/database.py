@@ -9,15 +9,3 @@ class Base(DeclarativeBase):
 
 
 db = SQLAlchemy(model_class=Base)
-
-
-class User(db.Model):
-    user_id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String)
-    secure_code: Mapped[str] = mapped_column(String)
-
-
-class Message(db.Model):
-    message_id: Mapped[int] = mapped_column(primary_key=True)
-    content: Mapped[str] = mapped_column(String)
-    owner: Mapped[int] = mapped_column(ForeignKey(User.user_id))
