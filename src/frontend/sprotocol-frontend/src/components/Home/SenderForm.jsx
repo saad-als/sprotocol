@@ -3,7 +3,7 @@ function SenderForm() {
 
 
     const [showLogin, setLogin] = useState(false);
-
+    // const [userName, setUserName] = useState("");
 
     const handleLogin = (e) => {
         if (e) {
@@ -19,6 +19,7 @@ function SenderForm() {
 
                 <div className="form-floating mb-3">
                     <button type="button" className="btn btn-success mx-auto">Join Chat</button>
+                    {/* <p>{userName || 'no usrname'}</p> */}
 
                 </div>
 
@@ -30,7 +31,8 @@ function SenderForm() {
                     <div className="d-inline-flex form-floating mb-3">
                         <input type="text" className="form-control" id="floatingInput" placeholder="..." />
                         <label htmlFor="floatingInput">Your Name</label>
-                        <span className="input-group-text"><button type="button" onClick={() => { setLogin(true) }} className="btn btn-outline-warning" >generate code</button>
+                        <span className="input-group-text">
+                            <button type="submit" onClick={() => { setLogin(true) }} className="btn btn-outline-warning" >generate code</button>
                         </span>
 
 
@@ -44,11 +46,6 @@ function SenderForm() {
     };
 
 
-    // send the sender name
-
-    // return the secure code to user
-
-    // when clicked join chat switch to chat page
     return (
         <>
             <div className="sender-class ">

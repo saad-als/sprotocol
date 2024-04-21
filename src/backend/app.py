@@ -1,19 +1,19 @@
 from flask import Flask
 from flask import request
-from .database import db
+# from .database import db
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///ttest.db"  # testing only
-db.init_app(app)
-
-with app.app_context():
-    db.create_all()
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///testdb.db"  # testing only
 
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
-    pass
+    return "hello Saad this is / route"
 
 
-@app.route("/chat")
+@app.route("/chat", methods=['GET', 'POST'])
 def chat():
     pass
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

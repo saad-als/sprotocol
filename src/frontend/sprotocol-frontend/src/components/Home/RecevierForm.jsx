@@ -12,7 +12,7 @@ function ReceiverForm() {
                         <label htmlFor="floatingInput">Your Name</label>
 
                         <div className="form-floating mb-3">
-                            <button type="button" className="btn btn-success mx-auto">Accept invite and Join Chat</button>
+                            <button type="submit" className="btn btn-success mx-auto">Accept invite and Join Chat</button>
 
                         </div>
 
