@@ -2,4 +2,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class Generator:
-    pass
+
+    # create a hash code
+    def generate_code(self, code):
+        self.hashed_code = generate_password_hash(code)
+        return self.hashed_code
+
+    # check hash code
+    def check_hash_code(self, code, password):
+        return check_password_hash(code, password)
