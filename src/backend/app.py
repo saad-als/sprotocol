@@ -1,12 +1,22 @@
 from flask import Flask
 from flask import request
-# from .database import db
+from .database import db
+from .user import User
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///testdb.db"  # testing only
+# testing only
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db_sprotocol.db"
+db.init_app(app)
+
+# create database
+with app.app_context():
+    db.create_all()
 
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
+    if request.method == 'POST':
+        pass
+
     return "hello Saad this is / route"
 
 
