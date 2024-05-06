@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import select
+from sqlalchemy import select, ForeignKey
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
@@ -10,12 +10,15 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(model_class=Base)
 
 
+class Message(db.Model):
+    __tablename__ = "message"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    message_content: Mapped[str]
+
+
 class User(db.Model):
+    __tablename__ = "user"
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str] = mapped_column(unique=True)
     secure_code: Mapped[str] = mapped_column(unique=True)
-
-
-class Message(db.Model):
-    id: Mapped[int] = mapped_column(primary_key=True)
-    message_content: Mapped[str]
+    messages: Mapped[int] = mapped_column(ForeignKey("message.id"))
