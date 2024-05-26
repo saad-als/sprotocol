@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask_cors import CORS
 from database import db
-from user import User
+from user import User as usr
 app = Flask(__name__)
 cors = CORS()
 # testing only
@@ -18,14 +18,17 @@ with app.app_context():
 def home():
     if request.method == 'POST':
         user_data = request.get_json()
-        print("data from frontend is here", user_data)
+        usr.create_sender(username=user_data)
+        usr.get_sender_hashcode(usr)
 
+    if request.method == 'GET':
+        pass
     return "hello Saad this is / route"
 
 
 @app.route("/chat", methods=['GET', 'POST'])
 def chat():
-    pass
+    return 'its working'
 
 
 if __name__ == '__main__':
