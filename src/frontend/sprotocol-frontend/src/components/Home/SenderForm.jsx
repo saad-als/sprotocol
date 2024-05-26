@@ -14,6 +14,7 @@ function SenderForm() {
 
         if (data.ok) {
             console.log("its ok")
+            console.log(data)
         }
 
     };
@@ -56,7 +57,7 @@ function SenderForm() {
 
 
 
-                            }} className="btn btn-outline-warning" >generate code</button>
+                            }} className="btn btn-outline-warning" >Next</button>
                         </span>
 
 

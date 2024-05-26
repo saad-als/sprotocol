@@ -11,7 +11,7 @@ function LoginForm() {
                 <div className="d-block text-center">
                     <img src="./././assets/sprotocol-logos/sprotocol-logos_black.png" alt="logo" className=" rounded d-block mx-auto" width="190" height="190" />
                     <h5 className="d-block">Welcome to [sprotocol] a secure web chat application</h5>
-                    <p>are a sender or recevier?</p>
+                    <p>are you sender or recevier?</p>
                 </div>
 
 
