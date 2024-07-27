@@ -4,7 +4,7 @@
 - a secure web chat application using a secure hash code password sent by [Sender] to [Recevier], to initiate the connection.
 
   # Built with
-  - Front-end (HTML, CSS, Js, React.js, TailwindCSS)
+  - Front-end (HTML, CSS, Js, React.js, Bootstrap)
   - Back-end (Python, Flask, SQl Alchemy)
 
 
