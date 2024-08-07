@@ -5,8 +5,8 @@ class Generator:
 
     # create a hash code
     def generate_code(self, code):
-        self.hashed_code = generate_password_hash(code)
-        return self.hashed_code
+        hashed_code = generate_password_hash(code)
+        return hashed_code
 
     # check hash code
     def check_hash_code(self, code, password):

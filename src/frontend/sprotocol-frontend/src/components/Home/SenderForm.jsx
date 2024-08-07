@@ -4,17 +4,18 @@ function SenderForm() {
     // sending the form to the backend
     const createUser = async () => {
         const username = document.getElementsByName("username")[0].value;
+        const secureCode = document.getElementsByName("secureCode")[0].value;
+
         const data = await fetch("http://localhost:5000", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(username)
-        })
+            body: JSON.stringify([username, secureCode])
+        });
 
         if (data.ok) {
             console.log("its ok")
-            console.log(data)
         }
 
     };
@@ -28,11 +29,11 @@ function SenderForm() {
             return (<>
                 <div className="d-inline-flex gap-3 m-2 form-floating">
                     <div className="input-group mb-3">
-                        <label htmlFor="code_label" className="">******</label>
+                        <input type="text" className="form-control" id="floatingInput" placeholder="****" name="secureCode" />
                     </div>
                 </div>
 
-                <p className="fs-6 fw-light">copy secure code and send it to the Recevier</p>
+                <p className="fs-6 fw-light">Enter a secure code known by you and the recevier.</p>
 
                 <div className="form-floating mb-3">
                     <button type="button" className="btn btn-success mx-auto">Join Chat</button>
